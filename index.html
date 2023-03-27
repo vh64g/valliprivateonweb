@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vallys Home\ Living room</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/elements/clock.css">
 </head>
-<body>
-
+<body class="body">
+    <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            <input id="logE" type="email" name="u" placeholder="E-Mail" required="required" />
+            <input id="logP" type="password" name="p" placeholder="Password" required="required" />
+            <button id="logB" type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+    </div>
+    <div id="digital-clock"></div>
+    <div class="register">
+        <h1>Register</h1>
+        <form method="post">
+            <input id="regE" type="email" name="u" placeholder="E-Mail" required="required" />
+            <input id="regP" type="password" name="p" placeholder="Password" required="required" />
+            <button id="regB" type="submit" class="btn btn-primary btn-block btn-large">Can I finally join?</button>
+        </form>
+    </div>
+    <script defer src="js/elements/firebase.js" type="module"></script>
+    <script defer src="js/elements/user.js" type="module"></script>
+    <script src="js/elements/clock.js"></script>
 </body>
 </html>
